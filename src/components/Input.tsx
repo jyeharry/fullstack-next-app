@@ -1,6 +1,10 @@
 import clsx from 'clsx'
+import { InputHTMLAttributes } from 'react'
 
-const Input = ({ className, ...props }) => {
+const Input = ({
+  className,
+  ...props
+}: InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <input
       className={clsx(
